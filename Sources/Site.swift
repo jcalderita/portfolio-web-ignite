@@ -1,0 +1,30 @@
+import Foundation
+import Ignite
+
+@main
+struct IgniteWebsite {
+    static func main() async {
+        let site = JcalderitaSite()
+
+        do {
+            try await site.publish()
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+}
+
+struct JcalderitaSite: Site {
+    var name = "jcalderita"
+    var titleSuffix = " – Profile"
+    var url = URL("https://www.jcalderita.com")
+    var builtInIconsEnabled = true
+    var pageWidth = 12
+
+    var author = "Jorge Calderita"
+
+    var homePage = Home()
+    var theme = MyTheme()
+}
+
+
