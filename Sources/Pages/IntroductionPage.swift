@@ -16,11 +16,10 @@ struct IntroductionPage: Component {
         Text("I'm a \(role)")
             .font(.title2)
             .horizontalAlignment(.center)
-            .foregroundStyle(.primaryColor)
+            .foregroundStyle(.titleColor)
         Divider().foregroundStyle(.accentColor)
         Text(introduction)
             .font(.title6)
             .foregroundStyle(.primaryColor)
-        Spacer()
     }
 }

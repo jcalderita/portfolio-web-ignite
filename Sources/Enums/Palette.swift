@@ -13,4 +13,5 @@ enum Palette: String {
     case background = "#0E1117"
     case accent = "#DC5F00"
     case accentOpacity = "#422211"
+    case titleColor = "#B74E03"
 }

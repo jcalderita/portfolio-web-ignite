@@ -18,10 +18,7 @@ struct ExperiencePage: Component {
     }
     
     func body(context: PublishingContext) -> [any PageElement] {
-        Text(type: type, uppercased: true)
-            .font(.title2)
-            .foregroundStyle(.primaryColor)
-            .id(type.idName)
+        Title()
         experiences.map { xp in
             Table {
                 Row {
@@ -40,10 +37,7 @@ struct ExperiencePage: Component {
                         .foregroundStyle(.primaryColor)
                         .margin(.none)
                     }
-                    .style(
-                        "background-color: \(Palette.secondary.rawValue)",
-                        "border-color: \(Palette.accentOpacity.rawValue)")
-                    .padding()
+                    .applyFirstStyle()
                 }
                 Row {
                     Column {
@@ -51,23 +45,26 @@ struct ExperiencePage: Component {
                             .foregroundStyle(.primaryColor)
                             .margin(.bottom, .none)
                     }
-                    .style(
-                        "background-color: \(Palette.background.rawValue)",
-                        "border-color: \(Palette.accentOpacity.rawValue)")
-                    .padding()
+                    .applySecondStyle()
                 }
                 Row {
                     Column {
                         Text("Link")
                             .foregroundStyle(.primaryColor)
                     }
-                    .style(
-                        "background-color: \(Palette.secondary.rawValue)",
-                        "border-bottom-width: 0")
-                    .padding()
+                    .applyThirdStyle()
                 }
             }
             .shadow(.accentColor, radius: 2)
         }
     }
+    
+    private func Title() -> PageElement {
+        Text(type: type, uppercased: true)
+            .font(.title2)
+            .foregroundStyle(.titleColor)
+            .id(type.idName)
+            .margin(.vertical)
+    }
+    
 }
