@@ -9,7 +9,7 @@ import Ignite
 
 
 extension Text {
-    init(type: TypeOfExperience, uppercased: Bool = false) {
+    init(type: ProfileOption, uppercased: Bool = false) {
         let description = type.iconWithDescription(uppercased: uppercased)
         self.init(description)
     }

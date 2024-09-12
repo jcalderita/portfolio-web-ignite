@@ -7,14 +7,14 @@
 
 import Foundation
 
-enum TypeOfExperience: String {
-    case job = "Work Experience"
+enum ProfileOption: String {
+    case job = "Jobs"
     case education = "Education"
     case contact = "Contact"
     
     var idName: String {
         switch self {
-            case .job: "job"
+            case .job: "jobs"
             case .education: "education"
             case .contact: "contact"
         }

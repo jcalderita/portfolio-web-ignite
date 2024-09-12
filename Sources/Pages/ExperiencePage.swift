@@ -9,10 +9,10 @@ import Foundation
 import Ignite
 
 struct ExperiencePage: Component {
-    let type: TypeOfExperience
+    let type: ProfileOption
     let experiences: [Experience]
     
-    init(_ type: TypeOfExperience, experiences: [Experience]) {
+    init(_ type: ProfileOption, experiences: [Experience]) {
         self.type = type
         self.experiences = experiences
     }

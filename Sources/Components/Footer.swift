@@ -24,6 +24,6 @@ struct Footer: Component {
         .margin(.top, .extraLarge)
         .font(.title4)
         .horizontalAlignment(.center)
-        .id(TypeOfExperience.contact.idName)
+        .id(ProfileOption.contact.idName)
     }
 }

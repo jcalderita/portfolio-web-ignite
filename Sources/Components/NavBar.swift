@@ -13,17 +13,17 @@ struct NavBar: Component {
     
     func body(context: PublishingContext) -> [any PageElement] {
         NavigationBar(logo: logo) {
-            Link(target: "#\(TypeOfExperience.job.idName)") {
+            Link(target: "#\(ProfileOption.job.idName)") {
                 Text(type: .job)
                     .margin(0)
                     .foregroundStyle(.primaryColor)
             }
-            Link(target: "#\(TypeOfExperience.education.idName)") {
+            Link(target: "#\(ProfileOption.education.idName)") {
                 Text(type: .education)
                     .margin(0)
                     .foregroundStyle(.primaryColor)
             }
-            Link(target: "#\(TypeOfExperience.contact.idName)") {
+            Link(target: "#\(ProfileOption.contact.idName)") {
                 Text(type: .contact)
                     .margin(0)
                     .foregroundStyle(.primaryColor)
