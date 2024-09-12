@@ -13,20 +13,12 @@ struct NavBar: Component {
     
     func body(context: PublishingContext) -> [any PageElement] {
         NavigationBar(logo: logo) {
-            Link(target: "#\(ProfileOption.job.idName)") {
-                Text(type: .job)
-                    .margin(0)
-                    .foregroundStyle(.primaryColor)
-            }
-            Link(target: "#\(ProfileOption.education.idName)") {
-                Text(type: .education)
-                    .margin(0)
-                    .foregroundStyle(.primaryColor)
-            }
-            Link(target: "#\(ProfileOption.contact.idName)") {
-                Text(type: .contact)
-                    .margin(0)
-                    .foregroundStyle(.primaryColor)
+            for option in ProfileOption.allCases {
+                Link(target: "#\(option.idName)") {
+                    Text(option: option)
+                        .margin(0)
+                        .foregroundStyle(.primaryColor)
+                }
             }
         }
         .navigationItemAlignment(.trailing)

@@ -9,16 +9,16 @@ import Foundation
 import Ignite
 
 struct ExperiencePage: Component {
-    let type: ProfileOption
+    let option: ProfileOption
     let experiences: [Experience]
     
-    init(_ type: ProfileOption, experiences: [Experience]) {
-        self.type = type
+    init(_ option: ProfileOption, experiences: [Experience]) {
+        self.option = option
         self.experiences = experiences
     }
     
     func body(context: PublishingContext) -> [any PageElement] {
-        Title()
+        Title(option)
         experiences.map { xp in
             Table {
                 Row {
@@ -49,8 +49,9 @@ struct ExperiencePage: Component {
                 }
                 Row {
                     Column {
-                        Text("Link")
+                        Tecnologies(xp.tecnologies)
                             .foregroundStyle(.primaryColor)
+                            .margin(.vertical, -10)
                     }
                     .applyThirdStyle()
                 }
@@ -58,13 +59,4 @@ struct ExperiencePage: Component {
             .shadow(.accentColor, radius: 2)
         }
     }
-    
-    private func Title() -> PageElement {
-        Text(type: type, uppercased: true)
-            .font(.title2)
-            .foregroundStyle(.titleColor)
-            .id(type.idName)
-            .margin(.vertical)
-    }
-    
 }

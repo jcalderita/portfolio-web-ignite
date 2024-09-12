@@ -24,6 +24,17 @@
                 "Maintained and migrated SQL Server database, optimizing efficiency.",
                 "Managed and automated deployments through continuous integration for faster, higher-quality deliveries.",
                 "Maintained and evolved APIs to ensure efficient communication with other systems and services."
+            ],
+            "tecnologies": [
+                "SQL Server",
+                "Oracle",
+                ".Net",
+                "C#",
+                "Visual Basic",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "JQuery"
             ]
         },
         {
@@ -39,6 +50,12 @@
                 "Resolution of technical incidents in the system, ensuring service stability and continuity.",
                 "Maintenance of batch processes in Cobol on the host for data loading and unloading.",
                 "Creation of customized reports for different departments, meeting the specific needs of each area."
+            ],
+            "tecnologies": [
+                "Oracle",
+                "Teradata",
+                "Cobol",
+                "Unix"
             ]
         }
     ],
@@ -51,6 +68,15 @@
             "responsabilities": [
                 "During the course, I gained advanced knowledge in developing applications for 3D and spatial environments with Apple Vision Pro. I learned to integrate immersive technologies, design interactive experiences, and work exclusively with Apple’s native tools, avoiding reliance on third-party libraries.",
                 "Additionally, the course reinforced the importance of having the architecture work for the developer, maintaining simplicity and efficiency in the workflow, which aligns perfectly with my professional approach."
+            ],
+            "tecnologies": [
+                "iOS",
+                "visionOS",
+                "Swift",
+                "SwiftUI",
+                "MVVM",
+                "ARKit",
+                "RealityKit"
             ]
         },
         {
@@ -60,6 +86,18 @@
             "interval": "February 2024–June 2024",
             "responsabilities": [
                 "In the bootcamp, I learned how to develop full-stack applications for the Apple ecosystem, both on the client side and server side using Swift and Vapor. The course covered advanced SwiftUI, design patterns, and the use of SwiftData for data persistence. It also delved into concurrency and asynchrony with Async/Await, optimizing application performance. Best security practices, along with the use of unit and UI testing, ensured robust and scalable development."
+            ],
+            "tecnologies": [
+                "iOS",
+                "Swift",
+                "Async/Await",
+                "MVVM",
+                "DocC",
+                "SwiftData",
+                "Vapor",
+                "TDD",
+                "Secure Development",
+                "Machine Learning"
             ]
         },
         {
@@ -69,6 +107,29 @@
             "interval": "September 1999–June 2001",
             "responsabilities": [
                 "Design, analyze, test applications, develop software, and implement systems."
+            ],
+            "tecnologies": [
+                "Acces",
+                "Metodoly",
+                "Visual Basic",
+                "Pascal",
+                "Cobol",
+                "Html",
+                "Css",
+                "Asp.net"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Portfolio",
+            "description": "*Personal web portfolio* made with **Ignite** and **Swift**.",
+            "links": [
+                {
+                    "icon": "github",
+                    "description": "GitHub",
+                    "link": "https://github.com/jcalderita/portfolio-web-ignite"
+                }
             ]
         }
     ],

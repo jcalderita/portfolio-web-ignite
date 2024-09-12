@@ -7,15 +7,17 @@
 
 import Foundation
 
-enum ProfileOption: String {
+enum ProfileOption: String, CaseIterable {
     case job = "Jobs"
     case education = "Education"
+    case project = "Projects"
     case contact = "Contact"
     
     var idName: String {
         switch self {
             case .job: "jobs"
             case .education: "education"
+            case .project: "project"
             case .contact: "contact"
         }
     }
@@ -24,6 +26,7 @@ enum ProfileOption: String {
         switch self {
             case .job: "⌨️"
             case .education: "📚"
+            case .project: "⚙️"
             case .contact: "👥"
         }
     }

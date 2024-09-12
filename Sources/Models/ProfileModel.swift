@@ -17,7 +17,7 @@ struct Profile: Decodable {
 
 struct Experience: Decodable {
     let title, role, place, interval: String
-    let responsabilities: [String]
+    let responsabilities, tecnologies: [String]
 }
 
 struct Project: Decodable {

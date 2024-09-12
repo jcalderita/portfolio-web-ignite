@@ -7,10 +7,9 @@
 
 import Ignite
 
-
 extension Text {
-    init(type: ProfileOption, uppercased: Bool = false) {
-        let description = type.iconWithDescription(uppercased: uppercased)
+    init(option: ProfileOption, uppercased: Bool = false) {
+        let description = option.iconWithDescription(uppercased: uppercased)
         self.init(description)
     }
 }
