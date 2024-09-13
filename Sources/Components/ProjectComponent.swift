@@ -8,7 +8,7 @@
 import Foundation
 import Ignite
 
-struct ProjectPage: Component {
+struct ProjectComponent: Component {
     let option: ProfileOption
     let projects: [Project]
     

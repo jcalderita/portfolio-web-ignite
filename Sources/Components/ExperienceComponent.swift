@@ -8,7 +8,7 @@
 import Foundation
 import Ignite
 
-struct ExperiencePage: Component {
+struct ExperienceComponent: Component {
     let option: ProfileOption
     let experiences: [Experience]
     

@@ -8,7 +8,7 @@
 import Foundation
 import Ignite
 
-struct IntroductionPage: Component {
+struct IntroductionComponent: Component {
     let role: String
     let introduction: String
     
