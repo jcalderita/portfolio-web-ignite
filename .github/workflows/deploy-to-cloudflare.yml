@@ -19,8 +19,6 @@ jobs:
 
     - name: Set up Swift
       uses: swift-actions/setup-swift@v2
-      # with:
-      #   swift-version: '5.10.1'
 
     - name: Build Swift package
       run: swift build --configuration release
@@ -37,3 +35,17 @@ jobs:
         directory: ./Build/
         gitHubToken: ${{ secrets.GITHUB_TOKEN }}
         branch: main
+
+  create_release:
+    runs-on: ubuntu-latest
+    needs: build-and-deploy
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
