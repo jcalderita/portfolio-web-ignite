@@ -123,7 +123,7 @@
     "projects": [
         {
             "name": "Portfolio",
-            "description": "*Personal web portfolio* made with **Ignite** and **Swift**.",
+            "description": "**Personal web portfolio** made with *Ignite* and *Swift*.",
             "links": [
                 {
                     "icon": "github",
