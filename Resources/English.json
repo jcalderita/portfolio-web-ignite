@@ -159,5 +159,6 @@
             "description": "Mail",
             "link": "mailto:contacto@jcalderita.com"
         }
-    ]
+    ],
+    "footer": "Created with Ignite and Swift."
 }

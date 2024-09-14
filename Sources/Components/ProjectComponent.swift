@@ -1,24 +1,19 @@
-//
-//  File.swift
-//  
-//
-//  Created by Jorge Calderita on 12/9/24.
-//
-
 import Foundation
 import Ignite
 
 struct ProjectComponent: Component {
     let option: ProfileOption
+    let language: PortfolioLanguage
     let projects: [Project]
     
-    init(_ option: ProfileOption, projects: [Project]) {
+    init(_ option: ProfileOption, for language: PortfolioLanguage, projects: [Project]) {
         self.option = option
+        self.language = language
         self.projects = projects
     }
     
     func body(context: PublishingContext) -> [any PageElement] {
-        Title(option)
+        Title(option, for: language)
         Section {
             projects.map { project in
                 Table {

@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  
-//
-//  Created by Jorge Calderita on 10/9/24.
-//
-
 import Foundation
 import Ignite
 
@@ -13,7 +6,7 @@ struct IntroductionComponent: Component {
     let introduction: String
     
     func body(context: PublishingContext) -> [any PageElement] {
-        Text("I'm a \(role)")
+        Text(role)
             .font(.title2)
             .horizontalAlignment(.center)
             .foregroundStyle(.titleColor)

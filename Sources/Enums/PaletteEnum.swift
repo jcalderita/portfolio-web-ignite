@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  
-//
-//  Created by Jorge Calderita on 10/9/24.
-//
-
 import Foundation
 
 enum Palette: String {

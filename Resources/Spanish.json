@@ -1,0 +1,164 @@
+{
+    "name": "Jorge Calderita",
+    "role": "Desarrollador de Software",
+    "introduction": "Con más de 20 años de experiencia como Desarrollador de Software, he liderado el desarrollo de la aplicación web IRATI en SALUD GN. Además, he formado parte del equipo encargado de la migración de IRATI hacia una tecnología más avanzada, lo que ha permitido mejorar su rendimiento y escalabilidad. Actualmente, estoy enfocando mi carrera hacia el desarrollo de aplicaciones para iOS y VisionOS, utilizando Swift tanto en el lado del cliente como del servidor, buscando nuevos desafíos en estas áreas emergentes.",
+    "languages": [
+        {
+            "language": "Español",
+            "level": "Nativo"
+        },
+        {
+            "language": "Inglés",
+            "level": "A2"
+        }
+    ],
+    "jobs": [
+        {
+            "title": "Bilbomatica - Salud Gobierno de Navarra",
+            "role": "Responsable técnico",
+            "place": "Pamplona, España",
+            "interval": "Abril 2010–Mayo 2024",
+            "responsabilities": [
+                "Mantenimiento, desarrollo, análisis y evolución de la aplicación web Irati (Cuidados de enfermería).",
+                "Migración de Visual Basic a C# bajo arquitectura MVC, mejorando la escalabilidad y el rendimiento.",
+                "Mantenimiento y migración de la base de datos en SQL Server, optimizando la eficiencia.",
+                "Gestión y automatización de despliegues mediante integración continua, con entregas rápidas y de calidad.",
+                "Mantenimiento y evolución de la API para garantizar la comunicación eficiente con otros sitemas y servicios"
+            ],
+            "tecnologies": [
+                "SQL Server",
+                "Oracle",
+                ".Net",
+                "C#",
+                "Visual Basic",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "JQuery"
+            ]
+        },
+        {
+            "title": "Wairbut - Infodesa - Duna (Caja de ahorros de Navarra)",
+            "role": "Analista programador",
+            "place": "Pamplona, España",
+            "interval": "Marzo 2005–Abril 2010",
+            "responsabilities": [
+                "Gestión y administración del entorno Datawarehouse basado en Oracle.",
+                "Planificación y ejecución de scripts Unix con instrucciones SQL para la carga de tablas en Oracle.",
+                "Optimización del rendimiento de procesos y mejora continua de la eficiencia operativa.",
+                "Creación y desarrollo de nuevos proyectos orientados al análisis y mejora del entorno informacional.",
+                "Resolución de incidencias técnicas en el sistema, garantizando la estabilidad y continuidad del servicio.",
+                "Mantenimiento de procesos batch en Cobol sobre host para la carga y descarga de datos.",
+                "Creación de informes personalizados para diferentes departamentos, cumpliendo las necesidades específicas de cada área."
+            ],
+            "tecnologies": [
+                "Oracle",
+                "Teradata",
+                "Cobol",
+                "Unix"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "title": "APPLE CODING ACADEMY",
+            "role": "Vision Developer Program",
+            "place": "España",
+            "interval": "Julio 2024",
+            "responsabilities": [
+                "Durante el curso adquirí conocimientos avanzados en el desarrollo de aplicaciones para entornos 3D y espaciales con el Apple Vision Pro. Aprendí a integrar tecnologías inmersivas, diseñar experiencias interactivas y a trabajar exclusivamente con herramientas nativas de Apple, evitando la dependencia de librerías de terceros.",
+                "Además, el curso refuerza la importancia de que la arquitectura trabaje para el desarrollador, manteniendo la simplicidad y eficiencia en el flujo de trabajo, lo cual encaja perfectamente con mi enfoque profesional."
+            ],
+            "tecnologies": [
+                "iOS",
+                "visionOS",
+                "Swift",
+                "SwiftUI",
+                "MVVM",
+                "ARKit",
+                "RealityKit"
+            ]
+        },
+        {
+            "title": "APPLE CODING ACADEMY",
+            "role": "Swift Full Stack Bootcamp",
+            "place": "España",
+            "interval": "Febrero 2024–Junio 2024",
+            "responsabilities": [
+                "En el bootcamp aprendí a desarrollar aplicaciones completas para el ecosistema Apple, tanto en el lado cliente como en el servidor usando Swift y Vapor. El curso abarcó SwiftUI avanzado, patrones de diseño, y el uso de SwiftData para la persistencia de datos. También se profundizó en la concurrencia y asincronía mediante Async/Await, optimizando el rendimiento de las aplicaciones. Las buenas prácticas de seguridad, junto con el uso de pruebas unitarias y de interfaz, aseguraron un desarrollo robusto y escalable."
+            ],
+            "tecnologies": [
+                "iOS",
+                "Swift",
+                "Async/Await",
+                "MVVM",
+                "DocC",
+                "SwiftData",
+                "Vapor",
+                "TDD",
+                "Secure Development",
+                "Machine Learning"
+            ]
+        },
+        {
+            "title": "ARTEAN. CUATROVIENTOS SCOOP",
+            "role": "Ciclo superior Desarrollo aplicaciones informáticas",
+            "place": "Pamplona, España",
+            "interval": "Septiembre 1999–Junio 2001",
+            "responsabilities": [
+                "Diseñar, analizar, probar aplicaciones, desarrollar software e implementar sistemas."
+            ],
+            "tecnologies": [
+                "Acces",
+                "Metodoly",
+                "Visual Basic",
+                "Pascal",
+                "Cobol",
+                "Html",
+                "Css",
+                "Asp.net"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Portfolio",
+            "description": "**Portfolio web personal** hecho con *Ignite* y *Swift*.",
+            "links": [
+                {
+                    "icon": "github",
+                    "description": "GitHub",
+                    "link": "https://github.com/jcalderita/portfolio-web-ignite"
+                }
+            ]
+        }
+    ],
+    "links": [
+        {
+            "icon": "linkedin",
+            "description": "Linkedin",
+            "link": "https://www.linkedin.com/in/jcalderita"
+        },
+        {
+            "icon": "github",
+            "description": "GitHub",
+            "link": "https://github.com/jcalderita"
+        },
+        {
+            "icon": "twitter-x",
+            "description": "X",
+            "link": "https://x.com/jcalderita"
+        },
+        {
+            "icon": "discord",
+            "description": "Discord",
+            "link": "https://discord.com/users/jcalderita"
+        },
+        {
+            "icon": "envelope",
+            "description": "Mail",
+            "link": "mailto:contacto@jcalderita.com"
+        }
+    ],
+    "footer": "Creado con Ignite y Swift."
+}

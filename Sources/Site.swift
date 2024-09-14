@@ -24,6 +24,10 @@ struct JcalderitaSite: Site {
     var feedConfiguration = FeedConfiguration(mode: .full, contentCount: 20, image: .init(url: "https://jcalderita.com/images/favicon.png", width: 32, height: 32))
     var author = "Jorge Calderita"
     
-    var homePage = Home()
+    var homePage = En()
     var theme = MyTheme()
+    var pages: [any StaticPage] {
+        En()
+        Es()
+    }
 }

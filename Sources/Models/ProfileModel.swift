@@ -1,14 +1,7 @@
-//
-//  File.swift
-//  
-//
-//  Created by Jorge Calderita on 10/9/24.
-//
-
 import Foundation
 
 struct Profile: Decodable {
-    let name, role, introduction: String
+    let name, role, introduction, footer: String
     let languages: [Language]
     let jobs, education: [Experience]
     let projects: [Project]

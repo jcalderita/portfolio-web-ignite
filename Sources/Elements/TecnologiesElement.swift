@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  
-//
-//  Created by Jorge Calderita on 12/9/24.
-//
-
 import Foundation
 import Ignite
 
