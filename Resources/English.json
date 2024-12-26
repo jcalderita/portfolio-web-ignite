@@ -62,6 +62,22 @@
     "education": [
         {
             "title": "APPLE CODING ACADEMY",
+            "role": "Swift Refresh Workshop",
+            "place": "Spain",
+            "interval": "December 2024",
+            "responsabilities": [
+                "During this course, I updated my skills with the latest advancements introduced by Apple, gaining hands-on experience with cutting-edge technologies such as Swift 6, Swift Data, and Swift Testing. I delved into the use of macros to optimize development and mastered Swift’s strict concurrency model to ensure safe and efficient execution of asynchronous operations. This learning enhances my ability to design modern, scalable solutions aligned with best practices within the Apple ecosystem."
+            ],
+            "tecnologies": [
+                "Swift 6",
+                "Swift Data",
+                "Swift Testing",
+                "Macros",
+                "Strict Concurrency"
+            ]
+        },
+        {
+            "title": "APPLE CODING ACADEMY",
             "role": "Vision Developer Program",
             "place": "Spain",
             "interval": "July 2024",
@@ -129,6 +145,17 @@
                     "icon": "github",
                     "description": "GitHub",
                     "link": "https://github.com/jcalderita/portfolio-web-ignite"
+                }
+            ]
+        },
+        {
+            "name": "Spatial shoes",
+            "description": "Practice project for **Apple Vision Pro**, developed with *VisionOS* and *Swift*.",
+            "links": [
+                {
+                    "icon": "github",
+                    "description": "GitHub",
+                    "link": "https://github.com/jcalderita/spatialshoes-app-vision"
                 }
             ]
         }

@@ -17,7 +17,7 @@ struct IgniteWebsite {
 struct JcalderitaSite: Site {
     var name = "jcalderita"
     var titleSuffix = " – Profile"
-    var url = URL("https://www.jcalderita.com")
+    var url = URL(StaticString(stringLiteral: "https://www.jcalderita.com"))
     var builtInIconsEnabled = true
     var pageWidth = 12
     var favicon = URL(string: "/images/favicon.png")
