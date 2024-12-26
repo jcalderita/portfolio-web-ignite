@@ -15,7 +15,7 @@ struct ProjectComponent: Component {
     func body(context: PublishingContext) -> [any PageElement] {
         Title(option, for: language)
         Section {
-            projects.map { project in
+            for project in projects {
                 Table {
                     Row {
                         Column {
@@ -47,6 +47,6 @@ struct ProjectComponent: Component {
                 .shadow(.accentColor, radius: 2)
             }
         }
-        .columns(4)
+        .columns(3)
     }
 }
