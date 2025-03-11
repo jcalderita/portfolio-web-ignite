@@ -1,15 +1,15 @@
 import Foundation
 import Ignite
 
+@MainActor
 func Links(_ links: [SocialLink]) -> Text {
     Text {
-        for link in links {
+        ForEach(links) { link in
             Link(target: link.link) {
                 Image(systemName: link.icon, description: link.description)
-                    .foregroundStyle(.primaryColor)
+                    .style(.color, .primary)
             }
             .margin()
-            .linkStyle(.hover)
         }
     }
 }

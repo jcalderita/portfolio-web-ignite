@@ -12,10 +12,10 @@ enum PortfolioLanguage: String {
         }
     }
     
-    var page: any StaticPage {
+    var page: String {
         switch self {
-            case .english: Es()
-            case .spanish: En()
+            case .english: "/es"
+            case .spanish: "/en"
         }
     }
 }

@@ -1,14 +1,13 @@
 import Foundation
 import Ignite
 
-func Tecnologies(_ tecnologies: [String]) -> Text {
+@MainActor
+func Tecnologies(_ tecnologies: [String]) -> some HTML {
     Text {
-        for tecnology in tecnologies {
-            Badge(tecnology)
+        ForEach(tecnologies) {
+            Badge($0)
                 .role(.close)
-                .style(
-                    "background-color: \(Palette.accentOpacity.rawValue)"
-                )
+                .style(.backgroundColor, .accentOpacity)
                 .padding(.medium)
                 .margin(.small)
         }

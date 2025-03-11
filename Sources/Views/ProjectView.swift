@@ -1,7 +1,7 @@
 import Foundation
 import Ignite
 
-struct ProjectComponent: Component {
+struct ProjectView: HTML {
     let option: ProfileOption
     let language: PortfolioLanguage
     let projects: [Project]
@@ -12,24 +12,25 @@ struct ProjectComponent: Component {
         self.projects = projects
     }
     
-    func body(context: PublishingContext) -> [any PageElement] {
-        Title(option, for: language)
-        Section {
-            for project in projects {
+    var body: some HTML {
+        TitleView(option, language: language)
+        
+        Grid {
+            ForEach(projects) { project in
                 Table {
                     Row {
                         Column {
                             Text(project.name)
                                 .font(.title6)
                                 .fontWeight(.bold)
-                                .foregroundStyle(.primaryColor)
+                                .style(.color, .primary)
                         }
                         .applyFirstStyle()
                     }
                     Row {
                         Column {
                             Text(markdown: project.description)
-                                .foregroundStyle(.primaryColor)
+                                .style(.color, .primary)
                                 .margin(.none)
                         }
                         .applySecondStyle()
@@ -37,8 +38,8 @@ struct ProjectComponent: Component {
                     Row {
                         Column {
                             Links(project.links)
-                                .font(.title4)
                                 .horizontalAlignment(.center)
+                                .font(.title4)
                                 .margin(.bottom, .none)
                         }
                         .applyThirdStyle()

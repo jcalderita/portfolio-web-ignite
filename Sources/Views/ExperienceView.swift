@@ -1,7 +1,7 @@
 import Foundation
 import Ignite
 
-struct ExperienceComponent: Component {
+struct ExperienceView: HTML {
     let option: ProfileOption
     let language: PortfolioLanguage
     let experiences: [Experience]
@@ -12,32 +12,33 @@ struct ExperienceComponent: Component {
         self.experiences = experiences
     }
     
-    func body(context: PublishingContext) -> [any PageElement] {
-        Title(option, for: language)
-        experiences.map { xp in
+    var body: some HTML {
+        TitleView(option, language: language)
+        
+        ForEach(experiences) { xp in
             Table {
                 Row {
                     Column {
                         Text(xp.title)
                             .font(.title6)
                             .fontWeight(.bold)
-                            .foregroundStyle(.primaryColor)
+                            .style(.color, .primary)
                         Text(xp.role)
-                            .foregroundStyle(.primaryColor)
+                            .style(.color, .primary)
                             .margin(.none)
                         Text {
                             xp.place.appending(" ")
                             Emphasis(xp.interval)
                         }
-                        .foregroundStyle(.primaryColor)
+                        .style(.color, .primary)
                         .margin(.none)
                     }
                     .applyFirstStyle()
                 }
                 Row {
                     Column {
-                        List { for responsability in xp.responsabilities { "\(responsability)" } }
-                            .foregroundStyle(.primaryColor)
+                        List { ForEach(xp.responsabilities) { xp in ListItem { "\(xp)"} } }
+                            .style(.color, .primary)
                             .margin(.bottom, .none)
                     }
                     .applySecondStyle()
@@ -45,7 +46,7 @@ struct ExperienceComponent: Component {
                 Row {
                     Column {
                         Tecnologies(xp.tecnologies)
-                            .foregroundStyle(.primaryColor)
+                            .style(.color, .primary)
                             .margin(.vertical, -10)
                     }
                     .applyThirdStyle()

@@ -2,28 +2,22 @@ import Foundation
 import Ignite
 
 extension Column {
-    func applyFirstStyle() -> Self {
-        self.style(
-            "background-color: \(Palette.secondary.rawValue)",
-            "border-color: \(Palette.accentOpacity.rawValue)"
-        )
-        .padding()
+    func applyFirstStyle() -> some HTML {
+        self.style(.backgroundColor, .secondary)
+            .style(.borderColor, .accentOpacity)
+            .padding()
     }
 
-    func applySecondStyle() -> Self {
-        self.style(
-            "background-color: \(Palette.background.rawValue)",
-            "border-color: \(Palette.accentOpacity.rawValue)"
-        )
-        .padding()
+    func applySecondStyle() -> some HTML {
+        self.style(.backgroundColor, .background)
+            .style(.borderColor, .accentOpacity)
+            .padding()
     }
     
-    func applyThirdStyle() -> Self {
-        self.style(
-            "background-color: \(Palette.secondary.rawValue)",
-            "border-bottom-width: 0"
-        )
-        .padding()
+    func applyThirdStyle() -> some HTML {
+        self.style(.backgroundColor, .secondary)
+            .style(.borderBottomWidth, "0")
+            .padding()
     }
 }
 

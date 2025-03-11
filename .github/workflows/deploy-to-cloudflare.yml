@@ -8,23 +8,23 @@ on:
 
 jobs:
   build-and-deploy:
-    permissions:
-      contents: read
-      deployments: write
-    runs-on: macos-14
+    runs-on: ubuntu-latest
+    container: swift:latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Set up Swift
-      uses: swift-actions/setup-swift@v2
-
     - name: Build Swift package
-      run: swift build --configuration release
+      run: swift build -c release --static-swift-stdlib
 
     - name: Run Swift package
       run: .build/release/JCalderitaWebSite
+
+    - name: Install npm
+      run: |
+        apt-get update
+        apt-get install -y npm
 
     - name: Publish to Cloudflare Pages
       uses: cloudflare/pages-action@v1
