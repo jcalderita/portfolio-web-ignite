@@ -5,6 +5,7 @@ enum ProfileOption: CaseIterable, CustomStringConvertible {
     case education
     case project
     case contact
+    case articles
     
     var idName: String {
         switch self {
@@ -12,6 +13,7 @@ enum ProfileOption: CaseIterable, CustomStringConvertible {
             case .education: "education"
             case .project: "project"
             case .contact: "contact"
+            case .articles: "articules"
         }
     }
     
@@ -21,6 +23,7 @@ enum ProfileOption: CaseIterable, CustomStringConvertible {
             case .education: "📚"
             case .project: "⚙️"
             case .contact: "👥"
+            case .articles: "📰"
         }
     }
     
@@ -38,6 +41,8 @@ enum ProfileOption: CaseIterable, CustomStringConvertible {
             case (.project, .spanish): "Proyectos"
             case (.contact, .english): "Contact"
             case (.contact, .spanish): "Contacto"
+            case (.articles, .english): "Articles"
+            case (.articles, .spanish): "Articulos"
         }
     }
     

@@ -32,4 +32,8 @@ struct JcalderitaSite: Site {
         En(),
         Es()
     ]
+    
+    var articlePages: [any ArticlePage] {
+        ArticleView()
+    }
 }
