@@ -2,7 +2,8 @@ import Ignite
 
 extension Body {
     func background(_ color: Color) -> Self {
-        .init { self.style(.backgroundColor, color.description) }
+//        .init { self.style(.backgroundColor, color.description) }
+        self.customAttribute(name: "style", value: "background-color: \(color.description);")
     }
 }
 

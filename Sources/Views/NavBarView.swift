@@ -9,13 +9,15 @@ struct NavBarView: HTML {
         NavigationBar(logo: logo) {
             for option in ProfileOption.allCases {
                 Link(target: "#\(option.idName)") {
-                    Text(option: option, for: language)
+//                    Text(option: option, for: language)
+                    Span(option: option, for: language)
                         .style(.color, .primary)
                         .margin(.none)
                 }
             }
             Link(target: language.page) {
-                Text("\(language.flag) Version")
+//                Text("\(language.flag) Version")
+                Span("\(language.flag) Version")
                     .style(.color, .primary)
                     .margin(.none)
             }
@@ -28,8 +30,8 @@ struct NavBarView: HTML {
     }
     
     private var logo: some InlineElement {
-        Text(name)
-            .font(.title4)
+        Span(name)
+            .font(.title5)
             .fontWeight(.bold)
             .style(.color, .primary)
             .margin(.none)

@@ -6,7 +6,7 @@ struct FooterView: HTML {
     
     var body: some HTML {
         Text {
-            ForEach(links) { link in
+            InlineForEach(links) { link in
                 Link(target: link.link) {
                     Image(systemName: link.icon)
                 }
@@ -15,6 +15,15 @@ struct FooterView: HTML {
                 .style(.color, .primary)
                 .margin(.horizontal, 10)
             }
+//            ForEach(links) { link in
+//                Link(target: link.link) {
+//                    Image(systemName: link.icon)
+//                }
+//                .relationship(.noOpener, .noReferrer)
+//                .class("text-decoration-none")
+//                .style(.color, .primary)
+//                .margin(.horizontal, 10)
+//            }
         }
         .horizontalAlignment(.center)
         .font(.title4)

@@ -15,7 +15,7 @@ struct ProjectView: HTML {
     var body: some HTML {
         TitleView(option, language: language)
         
-        Grid {
+        Grid(alignment: .leading) {
             ForEach(projects) { project in
                 Table {
                     Row {
