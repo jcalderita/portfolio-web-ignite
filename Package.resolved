@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/twostraws/Ignite.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "c9feffaad9c696762ff30a99dce865a7167baaec"
+        "revision" : "6a62f28d2f3ea5a3829615c625109055e6b09dff",
+        "version" : "0.5.2"
       }
     },
     {
@@ -21,10 +21,10 @@
     {
       "identity" : "swift-cmark",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-cmark.git",
+      "location" : "https://github.com/swiftlang/swift-cmark.git",
       "state" : {
-        "revision" : "3ccff77b2dc5b96b77db3da0d68d28068593fa53",
-        "version" : "0.5.0"
+        "revision" : "b022b08312decdc46585e0b3440d97f6f22ef703",
+        "version" : "0.6.0"
       }
     },
     {
@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/swiftlang/swift-markdown.git",
       "state" : {
-        "revision" : "8f79cb175981458a0a27e76cb42fee8e17b1a993",
-        "version" : "0.5.0"
+        "revision" : "ea79e83c8744d2b50b0dc2d5bbd1e857e1253bf9",
+        "version" : "0.6.0"
       }
     },
     {
@@ -50,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/scinfu/SwiftSoup.git",
       "state" : {
-        "revision" : "64e4daa41b0f22affa94a6063d509c137c26909c",
-        "version" : "2.8.5"
+        "revision" : "bba848db50462894e7fc0891d018dfecad4ef11e",
+        "version" : "2.8.7"
       }
     }
   ],

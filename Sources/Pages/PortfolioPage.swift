@@ -3,17 +3,18 @@ import Ignite
 
 struct Portfolio: HTML {
     @Environment(\.decode) var decode
-    
+
     let language: PortfolioLanguage
-    
+
     var portfolio: Profile? {
         decode.callAsFunction("\(language.rawValue).json", as: Profile.self)
     }
-    
+
     var body: some HTML {
         if let portfolio {
             NavBarView(name: portfolio.name, language: language)
             IntroductionView(role: portfolio.role, introduction: portfolio.introduction)
+            ArticlesView(.articles, for: language)
             ExperienceView(.job, for: language, experiences: portfolio.jobs)
             ExperienceView(.education, for: language, experiences: portfolio.education)
             ProjectView(.project, for: language, projects: portfolio.projects)
@@ -21,7 +22,7 @@ struct Portfolio: HTML {
             FooterIgniteView(footer: portfolio.footer)
         }
     }
-    
+
     init(for language: PortfolioLanguage = .english) {
         self.language = language
     }
