@@ -1,10 +1,15 @@
 ---
-title: Cómo empecé a aprender Swift
+title: La liga, gracias!!
 author: Jorge Calderita
-date: 2024-05-19 08:00
+date: 2025-05-19 08:00
 layout: ArticleView
 tags: Vapor, Swift
+image: /images/articles/LaLiga.webp
+imageDescription: “Gracias, La Liga!!” Un programador futbolista intenta marcar gol en la portería de su web, que es literalmente un muro de ladrillos.
+language: spanish
+published: false
 ---
+# Title
 
 # Cómo empecé a aprender Swift
 

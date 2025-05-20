@@ -2,38 +2,27 @@ import Foundation
 import Ignite
 
 struct NavBarView: HTML {
-    let name: String
     let language: PortfolioLanguage
+    
+    init(language: PortfolioLanguage) {
+        self.language = language
+    }
     
     var body: some HTML {
         NavigationBar(logo: logo) {
             for option in ProfileOption.allCases {
                 Link(target: "#\(option.idName)") {
-//                    Text(option: option, for: language)
                     Span(option: option, for: language)
                         .style(.color, .primary)
                         .margin(.none)
                 }
             }
             Link(target: language.page) {
-//                Text("\(language.flag) Version")
-                Span("\(language.flag) Version")
+                Span("\(language.flag)")
                     .style(.color, .primary)
                     .margin(.none)
             }
         }
-        .width(.viewport)
-        .navigationItemAlignment(.trailing)
-        .navigationBarStyle(.dark)
-        .background(.secondaryColor)
-        .position(.fixedTop)
-    }
-    
-    private var logo: some InlineElement {
-        Span(name)
-            .font(.title5)
-            .fontWeight(.bold)
-            .style(.color, .primary)
-            .margin(.none)
+        .applyStyle()
     }
 }

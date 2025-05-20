@@ -1,29 +1,29 @@
 import Foundation
 
 enum ProfileOption: CaseIterable, CustomStringConvertible {
+    case articles
     case job
     case education
     case project
     case contact
-    case articles
     
     var idName: String {
         switch self {
+            case .articles: "articules"
             case .job: "jobs"
             case .education: "education"
             case .project: "project"
             case .contact: "contact"
-            case .articles: "articules"
         }
     }
     
     var icon: String {
         switch self {
+            case .articles: "📰"
             case .job: "⌨️"
             case .education: "📚"
             case .project: "⚙️"
             case .contact: "👥"
-            case .articles: "📰"
         }
     }
     
@@ -33,6 +33,8 @@ enum ProfileOption: CaseIterable, CustomStringConvertible {
     
     func description(for language: PortfolioLanguage) -> String {
         switch (self, language) {
+            case (.articles, .english): "Articles"
+            case (.articles, .spanish): "Articulos"
             case (.job, .english): "Jobs"
             case (.job, .spanish): "Trabajos"
             case (.education, .english): "Education"
@@ -41,8 +43,6 @@ enum ProfileOption: CaseIterable, CustomStringConvertible {
             case (.project, .spanish): "Proyectos"
             case (.contact, .english): "Contact"
             case (.contact, .spanish): "Contacto"
-            case (.articles, .english): "Articles"
-            case (.articles, .spanish): "Articulos"
         }
     }
     

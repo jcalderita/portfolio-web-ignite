@@ -18,4 +18,12 @@ enum PortfolioLanguage: String {
             case .spanish: "/en"
         }
     }
+    
+    init(_ rawValue: String) {
+        self = switch rawValue.lowercased() {
+            case "english": .english
+            case "spanish": .spanish
+            default: fatalError("Unsupported language: \(rawValue)")
+        }
+    }
 }

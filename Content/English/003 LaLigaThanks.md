@@ -1,0 +1,27 @@
+---
+title: La liga, gracias!!
+author: Jorge Calderita
+date: 2024-05-19 08:00
+layout: ArticleView
+tags: Vapor, Swift
+image: /images/articles/LaLiga.webp
+imageDescription: “Gracias, La Liga!!” Un programador futbolista intenta marcar gol en la portería de su web, que es literalmente un muro de ladrillos.
+language: english
+published: false
+---
+# Title
+
+# Cómo empecé a aprender Swift
+
+Todo comenzó cuando decidí cambiar mi carrera como desarrollador de C# y aprender Swift para el ecosistema Apple.
+
+Aprendí los conceptos básicos de la sintaxis, el uso de Xcode y las ventajas de SwiftUI frente a UIKit. Al principio fue difícil, pero poco a poco me sentí más cómodo con la filosofía de Apple.
+
+## Consejos para aprender Swift
+
+- Practica todos los días, aunque sea un poco.
+- Lee documentación oficial y experimenta con los ejemplos.
+- Apúntate a comunidades y foros para resolver dudas.
+- Trabaja en un proyecto propio, aunque sea pequeño.
+
+¡No te rindas!

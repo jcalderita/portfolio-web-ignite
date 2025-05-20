@@ -1,7 +1,7 @@
 import Foundation
 
 struct Profile: Decodable {
-    let name, role, introduction, footer: String
+    let role, introduction, footer: String
     let languages: [Language]
     let jobs, education: [Experience]
     let projects: [Project]

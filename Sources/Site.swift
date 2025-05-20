@@ -19,6 +19,7 @@ struct JcalderitaSite: Site {
     var titleSuffix = " – Profile"
     var url = URL(static: "https://www.jcalderita.com")
     var builtInIconsEnabled = true
+    var syntaxHighlighterConfiguration: SyntaxHighlighterConfiguration = .init(languages: [.swift])
     var pageWidth = 12
     var favicon = URL(string: "/images/favicon.png")
     var feedConfiguration = FeedConfiguration(mode: .full, contentCount: 20, image: .init(url: "https://jcalderita.com/images/favicon.png", width: 32, height: 32))
@@ -30,7 +31,9 @@ struct JcalderitaSite: Site {
     
     var staticPages: [any StaticPage] = [
         En(),
-        Es()
+        Es(),
+        EnArticles(),
+        EsArticles()
     ]
     
     var articlePages: [any ArticlePage] {
