@@ -62,6 +62,24 @@
     "education": [
         {
             "title": "APPLE CODING ACADEMY",
+            "role": "Swift Accesibility Program",
+            "place": "España",
+            "interval": "Julio 2025",
+            "responsabilities": [
+                "Formación intensiva y práctica sobre accesibilidad en apps iOS, centrada en el cumplimiento de la Directiva Europea de Accesibilidad (EAA) y las Accessibility Nutrition Labels de Apple.",
+                "Implementación de accesibilidad real desde el primer día utilizando Swift, SwiftUI y UIKit, dominando las APIs nativas de Apple, técnicas de auditoría y buenas prácticas para diseñar apps inclusivas, funcionales y conformes con los estándares actuales y futuros."
+            ],
+            "tecnologies": [
+                "SwiftUI",
+                "Accessibility",
+                "WCAC Compliance",
+                "VoiceOver",
+                "Accessibilty Inspector",
+                "European Accessibility Act"
+            ]
+        },
+        {
+            "title": "APPLE CODING ACADEMY",
             "role": "Swift Refresh Workshop",
             "place": "España",
             "interval": "Diciembre 2024",
