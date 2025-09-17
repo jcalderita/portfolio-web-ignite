@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:jcalderita-web-ignite}",
+            "name": "Debug JCalderitaWebSite",
+            "program": "${workspaceFolder:jcalderita-web-ignite}/.build/debug/JCalderitaWebSite",
+            "preLaunchTask": "swift: Build Debug JCalderitaWebSite"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:jcalderita-web-ignite}",
+            "name": "Release JCalderitaWebSite",
+            "program": "${workspaceFolder:jcalderita-web-ignite}/.build/release/JCalderitaWebSite",
+            "preLaunchTask": "swift: Build Release JCalderitaWebSite"
+        }
+    ]
+}

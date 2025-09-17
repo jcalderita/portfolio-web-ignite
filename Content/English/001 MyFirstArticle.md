@@ -4,7 +4,7 @@ description: Update for my personal website built with Ignite and Swift, where I
 author: Jorge Calderita
 date: 2025-05-20 13:30
 layout: ArticleView
-tags: Swift, Ignite, Web
+tags: 
 image: /images/articles/MyFirstArticle.webp
 imageDescription: “My first article.” Comic-style illustration of a thoughtful programmer in front of an Apple laptop, writing his first article on his personal website.
 language: english
